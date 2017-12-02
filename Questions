@@ -1,0 +1,61 @@
+package com.example.simms.ivorymind;
+
+public class Questions {
+
+    public String mQuestions[] = {
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+            "Who is the person shown in the picture and what is their relation to you",
+    };
+
+    private String mChoices[][] = {
+            {"John/Cousin", "Ashley/Aunt", "Samantha/Mom", "Mark/Uncle"},
+            {"Chris/Grandpa", "Tom/Friend", "John/Cousin", "Smith/Brother"},
+            {"Isaiah/Friend", "Mark/Uncle", "Chris/Grandpa", "Hailey/Sister"},
+            {"Ashley/Aunt", "Smith/Brother", "Isaiah/Friend", "Samantha/Mom"},
+            {"Mark/Uncle", "Hailey/Sister", "Zack/Dad", "Ashley/Aunt"},
+            {"Zack/Dad", "Samantha/Mom", "Tom/Friend", "John/Cousin"},
+            {"Smith/Brother", "John/Cousin", "Mark/Uncle", "Chris/Grandpa"},
+            {"Hailey/Sister", "Chris/Grandpa", "Smith", "Tom/Friend"},
+            {"Samantha/Mom", "Isaiah/Friend", "Hailey/Sister", "Zack/Dad"},
+            {"Tom/Friend", "Zack/Dad", "Ashley/Aunt", "Isaiah/Friend"},
+    };
+
+    private String mCorrectAnswers[] = {"John/Cousin", "Smith/Brother", "Mark/Uncle", "Samantha/Mom", "Hailey/Sister", "Zack/Dad", "Chris/Grandpa", "Tom/Friend", "Isaiah/Friend", "Ashley/Aunt"};
+
+    public String getQuestion(int a){
+        String questions = mQuestions[a];
+        return questions;
+    }
+
+    public String getChoices1(int a){
+        String choice = mChoices [a][0];
+        return choice;
+    }
+    public String getChoices2(int a){
+        String choice = mChoices [a][1];
+        return choice;
+    }
+    public String getChoices3(int a){
+        String choice = mChoices [a][2];
+        return choice;
+    }
+    public String getChoices4(int a){
+        String choice = mChoices [a][3];
+        return choice;
+    }
+
+    public String getCorrectAnswer(int a){
+        String answer = mCorrectAnswers[a];
+        return answer;
+    }
+
+
+}
